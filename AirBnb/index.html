@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Locations saisonnières et locations en résidence - Airbnb</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/airbnb_logo_small.png">
+  </head>
+  <body>
+    <div class="header">
+    <nav class="navbar navbar-expand-md">
+        <a href="https://www.airbnb.fr/"><img class="navbar-brand"  src="assets/img/icons8-airbnb-48.png"></a>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <a class="nav-link" href="#">Devenir hôte</a>
+            <a class="nav-link" href="#">Aide</a>
+            <a class="nav-link" href="#">Inscription</a>
+            <a class="nav-link" href="#">Connexion</a>
+        </div>
+    </nav>
+    <div class="container" id="containerNavbar">
+        <div class="row">
+            <div class="col-xl-7 offset-xl-2">
+                <h1 class="titleBold">Réservez un séjour. Accueillez des voyageurs. Directement sur Airbnb.  </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 offset-xl-2 offset-lg-2">
+                <div class="button1">
+                    <p class="Bold">Trouvez des logements et des activités</p>
+                    <a class="btn btn-explorer btn-lg btn-block  btn-button" href="https://www.airbnb.fr/a?af=43720035&c=.pi0.pk4063331735_192900875465_c_12026464216&gclid=EAIaIQobChMI8Zylh-nx3wIVTjPTCh0Uiwr1EAAYASAAEgJCt_D_BwE" role="button">Explorer</a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="button2">
+                    <p class="Bold">Réservez un séjour</p>
+                    <a class="btn btn-accueil btn-lg active btn-button" href="https://www.airbnb.fr/host/homes?af=43720035&c=.pi0.pk4063331735_192900875465_c_12026464216&gclid=EAIaIQobChMI8Zylh-nx3wIVTjPTCh0Uiwr1EAAYASAAEgJCt_D_BwE" role="button">Accueillir</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+<div class="container" id="SearchBoard">
+  <div class="TitleBoard">
+    <h4 class="Bold">Réservez des logements et des expériences uniques</h4>
+  </div>
+    <form >
+  <div class="form-row">
+    <div class=" col-xl-3 col-lg-12  col-md-12 col-sm-12 col-12"><p class="Bold">OU ?</p>
+      <input type="text" class="form-control form-control-lg" placeholder="Partout">
+    </div>
+    <div class="col-xl-3 col-lg-6 d-none d-lg-block"> <p class="Bold">ARRIVEE-DEPART</p>
+      <input type="text" class="form-control form-control-lg" placeholder="jj/mm/aaaa   - jj/mm/aaaa">
+    </div>
+    <div class="col-sm-6 col-6 col-md-6 d-lg-none"> <p class="Bold">ARRIVEE</p>
+    <input type="text" class="form-control form-control-lg" placeholder="jj/mm/aaaa">
+  </div>
+  <div class="col-sm-5 col-6 col-md-6 d-lg-none"> <p class="Bold">DEPART</p>
+  <input type="text" class="form-control form-control-lg" placeholder="jj/mm/aaaa">
+</div>
+    <div class="col-xl-3 col-lg-6 d-none d-lg-block"><p class="Bold">VOYAGEURS</p>
+      <select type="text" class="form-control form-control-lg" placeholder="1 voyageur">
+<option>1 voyageur</option>
+        </select>
+      </div>
+
+      <div class="col-sm-6 col-6 col-md-6 d-lg-none"> <p class="Bold">ADULTES</p>
+      <select type="text" class="form-control form-control-lg" placeholder="1 Adultes">
+      <option>1 adulte</option>
+      <option>2 adultes</option>
+      <option>3 adultes</option>
+      <option>4 adultes</option>
+      <option>5 adultes</option>
+    </select>
+
+    </div>
+    <div class="col-sm-6 col-6 col-md-6 d-lg-none"> <p class="Bold">ENFANTS</p>
+    <select type="text" class="form-control form-control-lg" placeholder="0 enfants">
+      <option>0 enfant</option>
+      <option>1 enfant</option>
+      <option>2 enfants</option>
+      <option>3 enfants</option>
+      <option>4 enfants</option>
+      <option>5 enfants</option>
+    </select>
+</div>
+      <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12"> <p class="transparent"></p> <br/>
+     <button type="submit" class="btn  btn-lg btn-block" id="buttonSearch">Rechercher</button>
+    </div>
+  </div>
+</form>
+    </div>
+    <div class="container" id="containerTest">
+      <h4 class="Bold">France : ce que les autres voyageurs ont pensé de leur logement</h4>
+      <p>Les logements de France ont obtenu <span class="Bold">4.6 étoiles sur 5</span> et plus de <span class="Bold">11 500 000 commentaires</span></p>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="card" style="width: 21rem;">
+  <img src="assets/img/8484fea8_original.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="Stars"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+</p>
+    <p class="card-text">L'appartement est très bien situé dans le 11° arrondissement. Immeuble bien tenu. Appartement agréable, et calme. Très bon </p>
+<div class="row">
+<div class="col-1"><img src="assets/img/cecile.jpg" id="imgCircle" alt=""></div>
+<div class="col-7 offset-1">
+<p class="Bold">Cecile</p>
+<p>France</p>
+</div></div>
+  </div>
+</div>
+
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 offset-xl-1 offset-lg-1">
+          <div class="card" style="width: 21rem;">
+  <img src="assets/img/a08e635f-ec1c-4cc0-930d-b724a45257d8.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="Stars"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+</p>
+    <p class="card-text">L’équipement du logement est fidèle aux photos. Cependant, nous avons regretté l’absence : -de couverture, malgré notre </p>
+    <div class="row">
+    <div class="col-1"><img src="assets/img/original.jpg" id="imgCircle" alt=""></div>
+    <div class="col-7 offset-1">
+    <p class="Bold">Guillaume</p>
+    <p>France</p>
+    </div></div>
+      </div>
+    </div>
+
+            </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 offset-xl-1 offset-lg-1">
+          <div class="card" style="width: 21rem;">
+  <img src="assets/img/b428c3b3_original.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="Stars"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="15" height="15"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+</p>
+
+    <p class="card-text">Très bon accueil Ce petit nid douillet correspond bien à la description Tous est prévu et en plus en plein centre ville avec </p>
+    <div class="row">
+    <div class="col-1"><img src="assets/img/julien.jpg" id="imgCircle" alt=""></div>
+    <div class="col-7 offset-1">
+    <p class="Bold">Julien</p>
+    <p>France</p>
+    </div></div>
+      </div>
+    </div>
+
+            </div>
+    </div>
+
+
+          <div class="container" id="SecondPart">
+            <h1 class="espace">Voyager avec Airbnb</h1>
+            <hr class="hr3"></hr>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="50" height="50"viewBox="0 0 224 224"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><g id="surface1"><path d="M73.36,40.32c-28.035,0 -50.96,22.645 -50.96,50.54c0,57.2075 64.9075,87.1675 86.8,105.28l2.8,2.38l2.8,-2.38c21.8925,-18.1125 86.8,-48.0725 86.8,-105.28c0,-27.895 -22.925,-50.54 -50.96,-50.54c-15.575,0 -29.295,7.2275 -38.64,18.2c-9.345,-10.9725 -23.065,-18.2 -38.64,-18.2zM73.36,49.28c14.63,0 27.3525,7.4025 34.86,18.62l3.78,5.6l3.78,-5.6c7.5075,-11.2175 20.23,-18.62 34.86,-18.62c23.2225,0 42,18.5675 42,41.58c0,48.825 -54.9325,76.195 -80.64,96.32c-25.7075,-20.125 -80.64,-47.495 -80.64,-96.32c0,-23.0125 18.76,-41.58 42,-41.58z"></path></g></g></g></svg>
+
+                <p class="police"><strong>Assistance utilisateurs 24h/24</strong><br />
+                <p class="font-style">Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à toute heure.<p>
+                </div>
+             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="50" height="50"viewBox="0 0 224 224"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M111.83375,4.725c-0.94022,0.03243 -1.84637,0.35999 -2.59,0.93625l-103.04,80.40375c-1.95233,1.52223 -2.30098,4.33892 -0.77875,6.29125c1.52223,1.95233 4.33892,2.30098 6.29125,0.77875l6.20375,-4.83875v117.78375c0.00025,2.47413 2.00587,4.47975 4.48,4.48h61.9675c0.4838,0.07996 0.97745,0.07996 1.46125,0h52.29875c0.4838,0.07996 0.97745,0.07996 1.46125,0h62.01125c2.47413,-0.00025 4.47975,-2.00587 4.48,-4.48v-117.78375l6.20375,4.83875c1.26292,0.98485 2.95534,1.2211 4.43968,0.61973c1.48434,-0.60137 2.53507,-1.94898 2.75637,-3.53515c0.22129,-1.58617 -0.42048,-3.16991 -1.68355,-4.15457l-34.11625,-26.6175v-32.5675h-26.88v11.585l-42.04375,-32.80375c-0.83358,-0.64637 -1.86849,-0.97792 -2.9225,-0.93625zM112,14.88375l85.12,66.42125v120.295h-53.76v-85.12h-62.72v85.12h-53.76v-120.295zM165.76,35.84h8.96v16.61625l-8.96,-7zM89.6,125.44h44.8v76.16h-44.8z"></path></g></g></svg>
+
+               <p class="police"><strong>Charte d'hospitalité générale</strong></p>
+               <p class="font-style">Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une évaluation minimale et se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="50" height="50"viewBox="0 0 224 224"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><g id="surface1"><path d="M112,13.44c-24.7975,0 -44.8,20.0025 -44.8,44.8v26.88c0,14.5075 7.105,27.5275 17.92,35.7v20.3c0,0.4725 -0.0875,0.875 -1.26,1.96c-1.1725,1.085 -3.255,2.5375 -6.02,3.92c-5.5125,2.765 -13.475,5.6 -21.56,9.52c-8.085,3.92 -16.4675,8.9075 -22.96,16.1c-6.4925,7.1925 -10.92,16.835 -10.92,28.98v4.48h179.2v-4.48c0,-12.25 -4.4275,-21.9275 -10.92,-29.12c-6.4925,-7.1925 -14.875,-12.0925 -22.96,-15.96c-8.085,-3.8675 -16.065,-6.79 -21.56,-9.52c-2.7475,-1.365 -4.865,-2.695 -6.02,-3.78c-1.155,-1.085 -1.26,-1.54 -1.26,-2.1v-20.3c10.815,-8.1725 17.92,-21.1925 17.92,-35.7v-26.88c0,-24.7975 -20.0025,-44.8 -44.8,-44.8zM112,22.4c20.0025,0 35.84,15.8375 35.84,35.84v26.88c0,12.355 -6.4575,23.485 -15.96,29.82l-1.96,1.4v24.78c0,3.465 1.785,6.5275 4.06,8.68c2.275,2.1525 5.1275,3.7625 8.26,5.32c6.265,3.115 13.965,5.88 21.56,9.52c7.595,3.64 14.8925,8.0325 20.16,13.86c4.375,4.83 6.9125,11.025 7.84,18.62h-159.6c0.9275,-7.5075 3.4825,-13.6325 7.84,-18.48c5.2675,-5.845 12.565,-10.3075 20.16,-14c7.595,-3.6925 15.3125,-6.545 21.56,-9.66c3.115,-1.5575 6.0025,-3.2025 8.26,-5.32c2.2575,-2.1175 4.06,-5.0925 4.06,-8.54v-24.78l-1.96,-1.4c-9.5025,-6.335 -15.96,-17.465 -15.96,-29.82v-26.88c0,-20.0025 15.8375,-35.84 35.84,-35.84z"></path></g></g></g></svg>
+
+                <p class="police"><strong>Hôtes 5 étoiles</strong></p>
+                 <p class="font-style">Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est une seconde nature chez les hôtes Airbnb.</p>
+            </div>
+          </div>
+          <hr class="hr3"></hr>
+          <h2 class="espace">Réservé à l'instant à France</h2>
+          <div class="row">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <a id="link" href="https://www.airbnb.fr/rooms/3567278?guests=1&adults=1"><div class="card" style="width: 16rem;"><img src="/home/fradin/Documents/projetbotstrap/20c44ce1_original.jpg"  class="card-img-top" alt="1photo"></a>
+            <a id="link" href="https://www.airbnb.fr/rooms/3567278?guests=1&adults=1"><div class="card-body">
+            <p class="card-text titre">CHAMBRE PRIVÉE NAZELLES-NÉGRON<br />
+              <p class="card-text"><strong>Amboise Troglodyte/Chez Hélène</strong><br />
+                <p class="card-text">82&euro; par nuit</p>
+                <p class="mini">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg> 426 Superhost
+    </p></a>
+          </div> </div>
+          </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <a id="link" href="https://www.airbnb.fr/rooms/1169704?guests=1&adults=1"><div class="card" style="width: 16rem;"><img src="/home/fradin/Documents/projetbotstrap/94250ea3_original.jpg" class="card-img-top" alt="2photo"></a>
+              <a id="link" href="https://www.airbnb.fr/rooms/1169704?guests=1&adults=1"><div class="card-body">
+              <p class="card-text titre">LOGEMENT ENTIER AVIGNON<br />
+              <p class="card-text"><strong>N°1 à AVIGNON:coeur de ville-design-clim-wifi</strong><br />
+              <p class="card-text">39&euro; par nuit</p>
+                <p class="mini">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg> 490 Superhost
+    </p></a>
+            </div> </div>
+            </div>
+
+              <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <a id="link" href="https://www.airbnb.fr/rooms/489668?guests=1&adults=1"><div class="card" style="width: 16rem;"><img src="/home/fradin/Documents/projetbotstrap/a831e142_original.jpg"   class="card-img-top" alt="3photo"></a>
+                  <a id="link" href="https://www.airbnb.fr/rooms/489668?guests=1&adults=1"><div class="card-body">
+                <p class="card-text titre">YOURTE BELLECOMBE-EN-BAUGES<br />
+                  <p class="card-text"><strong>Une yourte au calme en Savoie Bauge</strong><br />
+                  <p class="card-text">75&euro; par nuit</p>
+                  <p class="mini">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width=10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,9.33333l-25.84896,74.66667h-77.18229l61.21354,47.26823l-21.85677,74.06511l63.67448,-43.67709v-22.62239v-73.9375z"></path></g></g></svg> 310
+    </p></a>
+              </div> </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                  <a id="link" href="https://www.airbnb.fr/rooms/1234202?guests=1&adults=1"><div class="card" style="width: 16rem;"><img src="/home/fradin/Documents/projetbotstrap/b41736ff_original.jpg"   class="card-img-top" alt="4photo"></a>
+                    <a id="link" href="https://www.airbnb.fr/rooms/1234202?guests=1&adults=1"><div class="card-body">
+                  <p class="card-text titre">VILLA ENTIÈRE LABENNE<br />
+                  <p class="card-text"><strong>Villa de Charme Sud Landes 3ch</strong><br />
+                  <p class="card-text">165&euro; par nuit</p>
+                  <p class="mini">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="10" height="10"viewBox="0 0 224 224"style=" fill:#000000;"><g transform="translate(-33.6,-33.6) scale(1.3,1.3)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#3498db"><path d="M112,166.852l63.756,38.48133l-16.92133,-72.52l56.32667,-48.79467l-74.172,-6.29067l-28.98933,-68.39467l-28.98933,68.39467l-74.172,6.29067l56.32667,48.79467l-16.92133,72.52z"></path></g></g></g></svg> 94 Superhost
+                 </p></a>
+                </div></div>
+                </div>
+                <p class="color" id="hover" id="active"><a id="TravelLink" href="https://www.airbnb.fr/s/France/homes?click_referer=t%3ASEE_ALL%7Csid%3A9581305f-37fe-40db-a043-98b9b365e79e%7Cst%3ALANDING_PAGE_HOMES&title_type=LANDING_PAGE_HOMES&place_id=ChIJMVd4MymgVA0R99lHx5Y__Ws&query=France&refinement_paths%5B%5D=%2Fhomes&allow_override%5B%5D=&s_tag=2_f1z-K7"><strong>Afficher les (8 000+)</a>></strong></p>
+                <p class="block"><strong>Quand voyagez-vous ?</strong></p>
+                <p class="taille">Vérifiez la disponibilité et le prix en ajoutant les dates.</p>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <button type="button" class="btn btn-lg" id="ButtonDate">Ajouter des dates</button>
+</div>
+</div>
+    <hr class="hr1">
+    <div class="container" id="containerFooter">
+      <footer class="footer">
+        <div class="row">
+          <div class="col-2 offset-2">
+            <a><strong>AirBnb</strong></a>
+          </div>
+          <div class="col-2">
+            <a><strong>Découvrir</strong></a>
+          </div>
+          <div class="col-2">
+            <a><strong>Hébergement</strong></a>
+          </div>
+          <div class="col-2">
+            <a class="btn-icon-2 btn-facebook" href="https://www.facebook.com/gdpr/consent/?consent_mode=5&entry_product=cg_block&from_messenger=0"><i class="fab fa-facebook"></i></a>
+            <a class="btn-icon-2 btn-twitter" href="https://twitter.com/airbnb_fr"><i class="fab fa-twitter"></i></a>
+            <a class="btn-icon-2 btn-instagram" href="https://www.instagram.com/airbnb/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="containerFooter">
+        <div class="row">
+          <div class="col-2 offset-2">
+            <a href="https://www.airbnb.fr/careers">Carrières</a>
+          </div>
+          <div class="col-2">
+            <a href="https://www.airbnb.fr/trust">Confiance et sécurité</a>
+          </div>
+          <div class="col-3">
+            <a href="https://www.airbnb.fr/host/homes?from_footer=1">Pourquoi être hôte</a>
+          </div>
+          <div class="col-2 ">
+            <a href="https://www.airbnb.fr/terms">Conditions</a>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="containerFooter">
+        <div class="row">
+          <div class="col-2 offset-2">
+            <a href="https://press.airbnb.com/fr/">Presse</a>
+          </div>
+          <div class="col-2">
+            <a href="https://www.airbnb.fr/invite?r=6">Crédit voyage</a>
+          </div>
+          <div class="col-3">
+            <a href="https://www.airbnb.fr/hospitality">Hospitalité</a>
+          </div>
+          <div class="col-2 ">
+            <a href="https://www.airbnb.fr/terms/privacy_policy">Politique et conf.</a>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="containerFooter">
+        <div class="row">
+          <div class="col-2 offset-2">
+            <a href="https://www.airbnb.fr/help/topic/250/terms---policies">Règles</a>
+          </div>
+          <div class="col-2">
+            <a href="https://www.airbnbcitizen.com/?utm_source=airbnb&utm_medium=footer&utm_campaign=product">Airbnb citizen</a>
+          </div>
+          <div class="col-3">
+            <a href="https://www.airbnb.fr/help/article/1383/responsible-hosting-in-france">Hébergement resp.</a>
+          </div>
+          <div class="col-2">
+            <a href="https://www.airbnb.fr/sitemaps/v2">Plan du site</a>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="containerFooter">
+        <div class="row">
+          <div class="col-2 offset-2">
+            <a href="https://www.airbnb.fr/help?from=footer">Aide</a>
+          </div>
+          <div class="col-2">
+            <a href="https://www.airbnb.fr/work?s=footer">Voyage d'affaires</a>
+          </div>
+          <div class="col-2">
+            <a href="https://community.withairbnb.com/t5/Community-Center-FR/ct-p/community-center-fr">Community center</a>
+          </div>
+          <div class="col-2">
+            <a></a>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="containerFooter">
+        <div class="row">
+          <div class="col-2 offset-2">
+            <a href="https://www.airbnb.fr/diversity">Diversité et intégration</a>
+          </div>
+          <div class="col-2">
+            <a href="https://www.airbnb.fr/things-to-do">Guides</a>
+          </div>
+          <div class="col-3">
+            <a href="https://www.airbnb.fr/host/experiences?from_footer=1">Organisez une expérience</a>
+            <span class="_lawrjnc1">Nouveau</span>
+          </div>
+          <div class="col-2">
+            <a></a>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="containerFooter">
+        <div class="row">
+          <div class="col-2 offset-2">
+            <a href="https://www.airbnb.fr/about/company-details">Coordonnées de l'entreprise</a>
+          </div>
+          <div class="col-2">
+            <a href="https://www.airbnb.fr/magazine">Airbnb mag</a>
+          </div>
+          <div class="col-3">
+            <a href="https://www.airbnb.fr/openhomes?from_footer=1">Open homes</a>
+            <span class="_lawrjnc1">Nouveau</span>
+          </div>
+          <div class="col-2">
+            <a></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="containerFooter">
+        <div class="row">
+          <div class="col-2 offset-2">
+            <a></a>
+          </div>
+          <div class="col-2">
+            <a href="https://www.airbnb.fr/events">Évènements</a>
+            <span class="_lawrjnc1">Nouveau</span>
+          </div>
+          <div class="col-3">
+            <a></a>
+          </div>
+          <div class="col-2">
+            <a></a>
+          </div>
+        </div>
+      </div>
+      <hr class="hr1">
+      <div class="container" id="containerFooter">
+        <div class="row">
+          <div class="airbnb-inc col-3 offset-2">
+            <img id="airbnblogo"  src="assets/img/logoairbnb.png" ></i>
+            <a class="btn-icon-2 btn-copyright"><i class="far fa-copyright"></i></a>
+            <a> Airbnb, Inc.</a>
+          </div>
+          <div class="col-3">
+            <a></a>
+          </div>
+          <!-- <div class="col-2">
+            <a></a>
+          </div> -->
+          <div class="col-4">
+            <form class="test456 col-2">
+              <fieldset>
+                <p>
+                  <select id ="ListLangues">
+                    <option value = "1">Français</option>
+                    <option value = "2">Chti</option>
+                    <option value = "3">Noich</option>
+                    <option value = "4">Chleuh</option>
+                  </select>
+                </p>
+              </fieldset>
+            </form>
+            <form class="test456 col-2">
+              <fieldset>
+                <p>
+                  <select id ="Devises">
+                    <option value = "1">EUR-€</option>
+                    <option value = "2">Dollars américain - $</option>
+                    <option value = "3">Baht thaïlandais - ฿</option>
+                    <option value = "4">Dinar</option>
+                  </select>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,302 @@
+body {
+  font-family: Circular,;
+  color: #484848;
+  font-size: 12px;
+}
+.header{
+  background-image: url('https://a0.muscache.com/pictures/a430c412-63bc-45f5-8a13-55647449a0b1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  padding-bottom: 120px;
+}
+
+/*GENERAL*/
+
+
+
+}
+
+#containerNavbar{
+  color: white;
+    margin-top: 125px;
+}
+
+/*NAVBAR*/
+
+.navbar-brand{
+  height: 40%;
+  width: 38px;
+
+}
+
+
+.nav-link {
+    color: white;
+}
+
+.nav-link::after{
+  content:'';
+  display:block;
+  width:0px;
+  height:2px;
+  background:#fff;
+  transition: 0;
+  margin-top: 25px;
+}
+.nav-link:hover::after{width:100%;}
+.nav-link:hover{
+  color: #ffffff;
+}
+
+.nav-link{
+  color: white;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+/* MAIN H1 */
+
+.titleBold {
+    font-weight: bold;
+    color: white;
+    margin-top: 100px;
+}
+
+
+/* BUTTON*/
+
+
+.btn-explorer{
+    width: 100%;
+    background-color: white;
+
+}
+
+.btn-accueil{
+    width: 100%;
+    border: 2px solid white;
+
+}
+
+.button1 .button2{
+    font-weight:bold;
+    font-size: 18px;
+}
+
+
+/* Text top button */
+
+.HeightText{
+  font-size: 0.8em;
+}
+
+.HeightTextbis{
+  font-size: 0.8em;
+}
+
+
+/*BLOC DE BARRE DE RECHERCHE*/
+
+form {margin-bottom: 50px;}
+
+#searchBoard{margin-top: 5px;}
+
+.form-control:focus{
+  border-color: #008489;
+  border-width: 1px;
+  box-shadow: none;
+
+}
+.form-row{
+  margin-bottom: 5px;
+}
+
+.TitleBoard{
+  margin-bottom: 50px;
+}
+.Bold{
+  font-weight: bold;
+
+}
+
+/*BLOC AFFICHAGE PHOTO */
+
+.card-text {
+
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+
+}
+
+.card-body {padding: 0px;
+}
+
+.card { border: 0px;
+}
+
+#buttonSearch{
+  bottom: 10px;
+}
+
+#buttonSearch {background-color: #FF5A5F;
+color: white;
+font-weight: bold;
+}
+
+#marginModified {
+  padding: 10px;
+
+}
+
+/* Contenu des différentes photos */
+
+#imgCircle {overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:40px;
+    height:40px;
+
+}
+
+/*seconde partie body */
+
+
+#SecondPart{margin-top: 100px;}
+}​
+.police{
+  margin-top: 17px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+
+}
+.mini{
+  padding: -14px 0px ;
+  font-size: 12px;
+  margin-bottom: -1px;
+  font-weight: bold;
+}
+.font-style{
+  font-size: 14px
+}
+
+}
+.titre{
+  margin-top: 10px;
+  font-size: 12px;
+  color: ##1F8489;
+  font-weight: bold;
+  }
+.color{
+  text-decoration: none;
+  color: #008489;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 15px
+}
+.color :hover{
+  color: #1F8489;
+ text-decoration: underline;
+}
+.block{
+  margin-top: 50px;
+  width: 100%;
+  font-size: 25px;
+  margin-left: 15px;
+}
+.taille{
+  font-size: 16px;
+  margin-top: -10px;
+  margin-left: 15px
+}
+#ButtonDate{
+  background-color: #008489;
+  color : white;
+  font-weight: bold;
+  font-size: 17px;
+
+}
+.hr3{
+  border-bottom:  0px solid #EBEBEB;
+}
+.espace{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+#link:hover, #link:visited, #link:active{
+  color: #484848;
+  text-decoration: none;
+}
+
+
+
+/* Taille des icones Facebook Twitter Instagram */
+.btn-icon-2{
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* Couleurs des icones Facebook Twitter Instagram */
+.btn-facebook{
+  color: #767676;
+}
+
+.btn-twitter{
+  color: #767676;
+}
+
+.btn-instagram{
+    color: #767676;
+  }
+
+a {
+  color: #767676;
+}
+
+strong {
+  color: #484848;
+}
+
+#airbnblogo{
+  width: 25px;
+  height: 25px;
+}
+
+._lawrjnc1 {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+    margin: 0px !important;
+    overflow-wrap: break-word !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.33333em !important;
+    color: #FFFFFF !important;
+    background-color: #008489;
+    border-radius: 4px;
+    padding: 1.2px;
+
+}
+
+.hr1 {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#containerFooter {
+  font-size: 14px;
+}
+
+select {
+  width: 100px;
+  height: 25px;
+}
+.test456{
+  float: left;
+  margin-left: 50px;
+}
+.airbnb-inc{
+  color: #767676;
+}

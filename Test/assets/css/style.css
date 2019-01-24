@@ -1,0 +1,771 @@
+/*PARAMÈTRES GÉNÉRAUX*/
+
+/*RESPONSIVE*/
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+
+@media screen and (max-width: 1280px)
+
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+
+@media all and (min-width: 1024px) and (max-width: 1280px)
+
+
+/* Sur les téléviseurs */
+
+@media tv
+
+
+/* Sur tous types d'écrans orientés verticalement */
+
+@media all and (orientation: portrait)
+
+
+/*POLICE*/
+
+/* POLICE D'ÉCRITURE DANS TOUT LE BODY*/
+
+body{
+background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+margin: 0;
+width: 100%;
+height: 100%;
+font-family: 'Raleway', sans-serif;
+}
+
+body{
+  background-image: url(../images/whi.jpg);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;}
+
+#h5{
+
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+.card-body{
+  font-size: 16px;
+}
+
+.section{
+  padding-top: 70px;
+  margin: 35px;
+}
+
+/*Mise en forme des card avec un box-shadow*/
+.card{
+  box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.6), 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION HEADER*/
+
+
+/*Navbar*/
+
+.navbar{
+  background-color: #020810;
+}
+
+.navbar{
+  background-color: #020810;
+}
+.navbar-nav{
+  padding-right: 20%;
+}
+
+.nav-link{
+  color: #FFFFFF !important;
+}
+.nav-link:hover{
+  background-color: #ffffff;
+  color: #020810 !important;
+  border-radius: 5%;
+  opacity: 0.7;
+}
+
+/*Background du header*/
+.profile-page{
+  background-image: url('../images/earth.png');
+  height: 620px;
+  width: 100%;
+}
+
+/*Paramètres photo de profil */
+.photoMoiProfil{
+  margin-top: 50px;
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 3px;
+}
+
+/*Paramètres "Francky G." */
+
+
+@mixin center(){
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+
+html{
+  width:100%;
+  height: 100%;
+  }
+
+  .container1{
+  position:absolute;
+  @include center();
+}
+
+
+.titlename{
+  font-weight: 800;
+
+  color: transparent;
+  font-size: 80px;
+  margin-top: 20px;
+  background: url('../images/rainbow-nebula.jpg') repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  line-height:100%;
+  letter-spacing: -8px;
+  margin-left: 50px;
+}
+
+.fullstack{
+  display: block;
+  text-transform: uppercase;
+  padding-top:10px;
+  color: white;
+  font-size: 35px;
+  margin-left: 50px;
+}
+
+.subtitle{
+  display: block;
+  text-transform: uppercase;
+  padding-top:10px;
+  color: white;
+  font-size: 15px;
+  margin-left: 50px;
+}
+
+/*2 BOUTONS : HIRE ME et CV PDF */
+
+
+/*Bouton Hire me*/
+.btn{
+    background-color: #020810;
+    color: white;
+    border: 2px solid #008CBA;
+}
+
+/*Effet lors du passage de la souris sur les boutons HIRE PDF et SEND*/
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #020810;
+    border-color: #020810;
+}
+
+/* PARAMÈTRES DES BOUTONS HIRE PDF SEND */
+.btn-hire, .btn-cv, .btn-send .btn-cv{
+  border-color: #FFFFFF;
+  margin-top: 260px;
+}
+
+
+/* Paramètres Flag */
+ .flag{
+   height: 50px;
+    width: 50px;
+    margin-top: -60px;
+    border-radius: 40px;
+    border-color: #FFFFFF;
+    border-style: solid;
+}
+
+/*EFFECT GET BACK*/
+
+@-webkit-keyframes drawIn {
+  0% {
+    stroke: transparent;
+    stroke-dashoffset: 10000;
+  }
+  75% {
+    stroke: white;
+  }
+}
+@keyframes drawIn {
+  0% {
+    stroke: transparent;
+    stroke-dashoffset: 10000;
+  }
+  75% {
+    stroke: white;
+  }
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 500px;
+  right: 0;
+  bottom: 1px;
+  left: 0;
+  margin: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 550px;
+}
+.mask-path {
+  stroke: white;
+  stroke-dasharray: 10000;
+  -webkit-animation: drawIn 2.5s 1s ease-in both;
+          animation: drawIn 2.5s 1s ease-in both;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/*SECTION ABOUT ME*/
+
+/*Mise en page de la section me*/
+#me{
+  margin: 35px;
+  margin-top: 90px;
+}
+
+#abouttitle{
+  color: black;
+}
+
+#about{
+color: black;
+margin-top: 50px;
+}
+
+#infotitle{
+color: black;
+}
+
+#info{
+color: black;
+margin-top: 30px;
+
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/*SECTION SKILLS*/
+
+/*Mise en page de la section skills*/
+#skills{
+  margin: 35px;
+  margin-top: -10px;
+}
+
+#skillssubtitle{
+
+}
+
+#skillsprogressbar{
+    font-size: 11px;
+  }
+
+
+
+/* Titre "Skills" */
+#sectiontitle{
+  color: black;
+}
+
+
+/*Paramètres Systèmes d'exploitation*/
+.osx{
+  background-image: url(http://icons.iconarchive.com/icons/tatice/cristal-intense/96/Apple-icon.png);
+background-size: 65px;
+float: left;
+}
+.windows{
+  background-image: url(http://icons.iconarchive.com/icons/benjigarner/softdimension/96/Windows-icon.png);
+background-size: 65px;
+float: left;
+}
+.linux{
+  background-image: url(http://icons.iconarchive.com/icons/tatice/operating-systems/96/Linux-icon.png);
+background-size: 65px;
+float: left;
+}
+.terminal{
+  background-image: url(http://icons.iconarchive.com/icons/apathae/chakram-2/96/Terminal-icon.png);
+background-size: 65px;
+float: left;
+}
+
+/*Paramètres des progress bar circulaires*/
+
+#skillscirclebar{
+  margin-top: 100px;
+  width: 100%;
+  color: black;
+}
+
+.progress {
+      margin-bottom: 0px;
+      height: 20px;
+      top: 80px;
+      left: 0;
+      right: 50px;
+      bottom: 50px;
+      margin: auto;
+      background: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 75px;
+      margin-left: 5px;
+}
+
+
+.progress-bar {
+  background-color: #FFFFFF;
+}
+
+
+.progress-circle{
+  position: relative;             /* pour servir de référent */
+  box-sizing: border-box;         /* prise en compte bordure dans la dimension */
+  font-size: 6em;                 /* pour définir les dimensions */
+  width: 1em;                     /* fixe la largeur */
+  height: 1em;                    /* fixe la hauteur */
+  border-radius: 50%;             /* rendu aspect circulaire */
+  border: .15em solid #FFFFFF;       /* couleur de fond de l'anneau */
+  background-color: #FFFFFF;         /* couleur de fond de la progress bar */
+  margin: 108px;
+  margin-top: 40px;
+  left: 205px;
+}
+.progress-masque {
+  position: absolute;
+  width: 1em;                     /* 100% de la largeur */
+  height: 1em;                    /* 100% de la hauteur */
+  left: -.15em;                   /* décalage de la largeur bordure de la gauge */
+  top: -.15em;                    /* décalage de la largeur bordure de la gauge */
+  clip: rect(0, 1em, 1em, .5em);  /* par défaut seule la partie droite est visible */
+}
+.progress-circle[data-value^='5']:not([data-value='5']):not([data-value^='5.']) .progress-masque,
+.progress-circle[data-value^='6']:not([data-value='6']):not([data-value^='6.']) .progress-masque,
+.progress-circle[data-value^='7']:not([data-value='7']):not([data-value^='7.']) .progress-masque,
+.progress-circle[data-value^='8']:not([data-value='8']):not([data-value^='8.']) .progress-masque,
+.progress-circle[data-value^='9']:not([data-value='9']):not([data-value^='9.']) .progress-masque,
+.progress-circle[data-value^='100'] .progress-masque {
+  clip: rect(auto, auto, auto, auto);
+}
+.progress-barre,
+.progress-sup50 {
+  position: absolute;
+  box-sizing: border-box;         /* prise en compte bordure dans la dimension */
+  border-width: .11em;            /* largeur bordure de la gauge */
+  border-style: solid;
+  border-color: #069;             /*couleur de fond du cercle*/
+  border-radius: 50%;             /* rendu aspect circulaire */
+  width: 1em;                     /* largeur à 100% */
+  height: 1em;                    /* hauteur à 100% */
+  clip: rect(0, .5em, 1em, 0);    /* on ne garde que la partie gauche */
+}
+
+.progress-circle[data-value="0"]     .progress-barre {transform: rotate(0.00deg)}
+.progress-circle[data-value="1"]     .progress-barre {transform: rotate(3.60deg)}
+.progress-circle[data-value="2"]     .progress-barre {transform: rotate(7.20deg)}
+.progress-circle[data-value="3"]     .progress-barre {transform: rotate(10.80deg)}
+.progress-circle[data-value="4"]     .progress-barre {transform: rotate(14.40deg)}
+.progress-circle[data-value="5"]     .progress-barre {transform: rotate(18.00deg)}
+.progress-circle[data-value="6"]     .progress-barre {transform: rotate(21.60deg)}
+.progress-circle[data-value="7"]     .progress-barre {transform: rotate(25.20deg)}
+.progress-circle[data-value="8"]     .progress-barre {transform: rotate(28.80deg)}
+.progress-circle[data-value="9"]     .progress-barre {transform: rotate(32.40deg)}
+.progress-circle[data-value="10"]    .progress-barre {transform: rotate(36.00deg)}
+.progress-circle[data-value="11"]    .progress-barre {transform: rotate(39.60deg)}
+.progress-circle[data-value="12"]    .progress-barre {transform: rotate(43.20deg)}
+.progress-circle[data-value="13"]    .progress-barre {transform: rotate(46.80deg)}
+.progress-circle[data-value="14"]    .progress-barre {transform: rotate(50.40deg)}
+.progress-circle[data-value="15"]    .progress-barre {transform: rotate(54.00deg)}
+.progress-circle[data-value="16"]    .progress-barre {transform: rotate(57.60deg)}
+.progress-circle[data-value="17"]    .progress-barre {transform: rotate(61.20deg)}
+.progress-circle[data-value="18"]    .progress-barre {transform: rotate(64.80deg)}
+.progress-circle[data-value="19"]    .progress-barre {transform: rotate(68.40deg)}
+.progress-circle[data-value="20"]    .progress-barre {transform: rotate(72.00deg)}
+.progress-circle[data-value="21"]    .progress-barre {transform: rotate(75.60deg)}
+.progress-circle[data-value="22"]    .progress-barre {transform: rotate(79.20deg)}
+.progress-circle[data-value="23"]    .progress-barre {transform: rotate(82.80deg)}
+.progress-circle[data-value="24"]    .progress-barre {transform: rotate(86.40deg)}
+.progress-circle[data-value="25"]    .progress-barre {transform: rotate(90.00deg)}
+.progress-circle[data-value="26"]    .progress-barre {transform: rotate(93.60deg)}
+.progress-circle[data-value="27"]    .progress-barre {transform: rotate(97.20deg)}
+.progress-circle[data-value="28"]    .progress-barre {transform: rotate(100.80deg)}
+.progress-circle[data-value="29"]    .progress-barre {transform: rotate(104.40deg)}
+.progress-circle[data-value="30"]    .progress-barre {transform: rotate(108.00deg)}
+.progress-circle[data-value="31"]    .progress-barre {transform: rotate(111.60deg)}
+.progress-circle[data-value="32"]    .progress-barre {transform: rotate(115.20deg)}
+.progress-circle[data-value="33"]    .progress-barre {transform: rotate(118.80deg)}
+.progress-circle[data-value="34"]    .progress-barre {transform: rotate(122.40deg)}
+.progress-circle[data-value="35"]    .progress-barre {transform: rotate(126.00deg)}
+.progress-circle[data-value="36"]    .progress-barre {transform: rotate(129.60deg)}
+.progress-circle[data-value="37"]    .progress-barre {transform: rotate(133.20deg)}
+.progress-circle[data-value="38"]    .progress-barre {transform: rotate(136.80deg)}
+.progress-circle[data-value="39"]    .progress-barre {transform: rotate(140.40deg)}
+.progress-circle[data-value="40"]    .progress-barre {transform: rotate(144.00deg)}
+.progress-circle[data-value="41"]    .progress-barre {transform: rotate(147.60deg)}
+.progress-circle[data-value="42"]    .progress-barre {transform: rotate(151.20deg)}
+.progress-circle[data-value="43"]    .progress-barre {transform: rotate(154.80deg)}
+.progress-circle[data-value="44"]    .progress-barre {transform: rotate(158.40deg)}
+.progress-circle[data-value="45"]    .progress-barre {transform: rotate(162.00deg)}
+.progress-circle[data-value="46"]    .progress-barre {transform: rotate(165.60deg)}
+.progress-circle[data-value="47"]    .progress-barre {transform: rotate(169.20deg)}
+.progress-circle[data-value="48"]    .progress-barre {transform: rotate(172.80deg)}
+.progress-circle[data-value="49"]    .progress-barre {transform: rotate(176.40deg)}
+.progress-circle[data-value="50"]    .progress-barre {transform: rotate(180.00deg)}
+.progress-circle[data-value="51"]    .progress-barre {transform: rotate(183.60deg)}
+.progress-circle[data-value="52"]    .progress-barre {transform: rotate(187.20deg)}
+.progress-circle[data-value="53"]    .progress-barre {transform: rotate(190.80deg)}
+.progress-circle[data-value="54"]    .progress-barre {transform: rotate(194.40deg)}
+.progress-circle[data-value="55"]    .progress-barre {transform: rotate(198.00deg)}
+.progress-circle[data-value="56"]    .progress-barre {transform: rotate(201.60deg)}
+.progress-circle[data-value="57"]    .progress-barre {transform: rotate(205.20deg)}
+.progress-circle[data-value="58"]    .progress-barre {transform: rotate(208.80deg)}
+.progress-circle[data-value="59"]    .progress-barre {transform: rotate(212.40deg)}
+.progress-circle[data-value="60"]    .progress-barre {transform: rotate(216.00deg)}
+.progress-circle[data-value="61"]    .progress-barre {transform: rotate(219.60deg)}
+.progress-circle[data-value="62"]    .progress-barre {transform: rotate(223.20deg)}
+.progress-circle[data-value="63"]    .progress-barre {transform: rotate(226.80deg)}
+.progress-circle[data-value="64"]    .progress-barre {transform: rotate(230.40deg)}
+.progress-circle[data-value="65"]    .progress-barre {transform: rotate(234.00deg)}
+.progress-circle[data-value="66"]    .progress-barre {transform: rotate(237.60deg)}
+.progress-circle[data-value="67"]    .progress-barre {transform: rotate(241.20deg)}
+.progress-circle[data-value="68"]    .progress-barre {transform: rotate(244.80deg)}
+.progress-circle[data-value="69"]    .progress-barre {transform: rotate(248.40deg)}
+.progress-circle[data-value="70"]    .progress-barre {transform: rotate(252.00deg)}
+.progress-circle[data-value="71"]    .progress-barre {transform: rotate(255.60deg)}
+.progress-circle[data-value="72"]    .progress-barre {transform: rotate(259.20deg)}
+.progress-circle[data-value="73"]    .progress-barre {transform: rotate(262.80deg)}
+.progress-circle[data-value="74"]    .progress-barre {transform: rotate(266.40deg)}
+.progress-circle[data-value="75"]    .progress-barre {transform: rotate(270.00deg)}
+.progress-circle[data-value="76"]    .progress-barre {transform: rotate(273.60deg)}
+.progress-circle[data-value="77"]    .progress-barre {transform: rotate(277.20deg)}
+.progress-circle[data-value="78"]    .progress-barre {transform: rotate(280.80deg)}
+.progress-circle[data-value="79"]    .progress-barre {transform: rotate(284.40deg)}
+.progress-circle[data-value="80"]    .progress-barre {transform: rotate(288.00deg)}
+.progress-circle[data-value="81"]    .progress-barre {transform: rotate(291.60deg)}
+.progress-circle[data-value="82"]    .progress-barre {transform: rotate(295.20deg)}
+.progress-circle[data-value="83"]    .progress-barre {transform: rotate(298.80deg)}
+.progress-circle[data-value="84"]    .progress-barre {transform: rotate(302.40deg)}
+.progress-circle[data-value="85"]    .progress-barre {transform: rotate(306.00deg)}
+.progress-circle[data-value="86"]    .progress-barre {transform: rotate(309.60deg)}
+.progress-circle[data-value="87"]    .progress-barre {transform: rotate(313.20deg)}
+.progress-circle[data-value="88"]    .progress-barre {transform: rotate(316.80deg)}
+.progress-circle[data-value="89"]    .progress-barre {transform: rotate(320.40deg)}
+.progress-circle[data-value="90"]    .progress-barre {transform: rotate(324.00deg)}
+.progress-circle[data-value="91"]    .progress-barre {transform: rotate(327.60deg)}
+.progress-circle[data-value="92"]    .progress-barre {transform: rotate(331.20deg)}
+.progress-circle[data-value="93"]    .progress-barre {transform: rotate(334.80deg)}
+.progress-circle[data-value="94"]    .progress-barre {transform: rotate(338.40deg)}
+.progress-circle[data-value="95"]    .progress-barre {transform: rotate(342.00deg)}
+.progress-circle[data-value="96"]    .progress-barre {transform: rotate(345.60deg)}
+.progress-circle[data-value="97"]    .progress-barre {transform: rotate(349.20deg)}
+.progress-circle[data-value="98"]    .progress-barre {transform: rotate(352.80deg)}
+.progress-circle[data-value="99"]    .progress-barre {transform: rotate(356.40deg)}
+.progress-circle[data-value="100"]   .progress-barre {transform: rotate(360.00deg)}
+
+.progress-sup50 {
+  display: none;
+  clip: rect(0, 1em, 1em, .5em);
+}
+.progress-circle[data-value^='5']:not([data-value='5']):not([data-value^='5.']) .progress-sup50,
+.progress-circle[data-value^='6']:not([data-value='6']):not([data-value^='6.']) .progress-sup50,
+.progress-circle[data-value^='7']:not([data-value='7']):not([data-value^='7.']) .progress-sup50,
+.progress-circle[data-value^='8']:not([data-value='8']):not([data-value^='8.']) .progress-sup50,
+.progress-circle[data-value^='9']:not([data-value='9']):not([data-value^='9.']) .progress-sup50,
+.progress-circle[data-value^='100'] .progress-sup50 {
+  display:block;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION DIPLOMAS*/
+
+.cc-education{
+  font-size: 35px;
+}
+
+/*Titre "Diplomas" */
+#sectiontitle{
+  color: black;
+}
+
+#textdiploma{
+  color: black;
+}
+
+/*Paramètres logos écoles*/
+
+#logoe2n{
+  margin-top: 10px;
+  width: 50%;
+  height: 40%;
+  margin-left: 80px;
+}
+
+#logoanderson{
+  margin-top: 30px;
+  width: 60%;
+  height: 40%;
+  margin-left: 60px;
+}
+
+/* EFFET DE ZOOM PHOTOS SOCIÉTÉS + ÉCOLES*/
+
+.zoom div img {
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.zoom div:hover img {
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION EXPERIENCES*/
+
+/*Mise en page de la section experience*/
+#experience{
+  margin: 35px;
+}
+
+/*Titre "Experiences" */
+
+#sectiontitle{
+  color: black;
+}
+
+/*Titre de poste*/
+#h5{
+  color: black;
+}
+
+.dates{
+  color: white;
+}
+
+/*Couleur du background et du texte dans les titres des card*/
+.col-md-3{
+  background-image: url(../images/jupiter.jpg);
+  color: #FFFFFF
+}
+
+#galaxie{
+  background-image: url(../images/galaxy.jpg);
+}
+
+/*Titre de "Experience"*/
+#sectiontitle{
+  color: black;
+}
+
+#jobdescription {
+  font-size: 15px;
+  color: #000000;
+}
+
+
+/*Paramètres logos expériences*/
+
+#logobnp{
+  margin-top: 3px;
+  width: 85%;
+  height: 40%;
+  margin-left: 30px;
+}
+
+#logoboulanger{
+  margin-top: 130px;
+  width: 50%;
+  height: 40%;
+  margin-left: 80px;
+}
+
+#logoapple{
+  margin-top: 200px;
+  width: 35%;
+  height: 40%;
+  margin-left: 100px;
+}
+
+#logodrais{
+  margin-top: 200px;
+  width: 30%;
+  height: 40%;
+  margin-left: 100px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION CONTACT*/
+
+/*Background "Contact"*/
+.cc-contact-information{
+  background-image: url('../images/terre.jpg');
+  height: 700px;
+}
+
+/*Mise en page de la section CONTACT*/
+#contact{
+  margin: 35px;
+}
+
+#address{
+  color: black;
+}
+
+#mobile{
+  color: black;
+}
+
+#textcontact{
+  color: black;
+}
+
+/*Titre "Contact"*/
+
+#sectiontitle{
+  color: black;
+}
+
+.title-contact{
+  margin-top: 40px;
+}
+
+ {   position: fixed; right: 0; bottom: 0;   min-width: 100%; min-height: 100%;   width: auto; height: auto; z-index: -100;   background-size: cover; }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SCROLL*/
+
+
+/*Paramètres CSS du bouton scroll*/
+
+.scroll-top-wrapper {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99999999;
+  background-color: #020810;
+  width: 50px;
+  height: 50px;
+  line-height: 43px; /*position de la fleche à l'intérieur de la bulle */
+  right: 30px;
+  bottom: 30px;
+  padding-top: 2px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+  background-color: #FFFFFF;
+}
+
+.scroll-top-wrapper.show {
+  visibility: visible;
+  cursor: pointer;
+  opacity: 1.0;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION FOOTER*/
+
+
+
+/*Citation*/
+
+#citation {
+  font-size: 20px;
+  color: black;
+  margin-bottom:100px;
+}
+
+/* button github et linkedin */
+.btn-round{
+  border-radius: 50%;
+  font-size: 30px;
+  border-color: #FFFFFF;
+}
+.btn-github:hover{
+  background-color: #24292e;
+  color: #ffffff;
+  border-color: #020810;
+}
+.btn-linkedIn:hover{
+  background-color: #0077b5;
+  color: #ffffff;
+  border-color: #020810;
+}
+
+/* Liens github,linkedin Instagram & Gitlab en bas de page */
+.button-container-bottom{
+  margin-top: 200px;
+}
+/* Taille des icones github linkedin instagram Gitlab*/
+.btn-icon-2{
+  font-size: 50px;
+  padding: 10px;
+}
+
+/* Couleurs des icones Github linkedin Instagram & Gitlab*/
+.btn-github2{
+  color: #0056B3;
+}
+
+.btn-linkedIn2{
+  color: #0056B3;
+}
+
+.btn-instagram2{
+    color: #0056B3;
+  }
+
+.btn-gitlab{
+  color: #0056B3;
+}
+
+
+/*Copyrights*/
